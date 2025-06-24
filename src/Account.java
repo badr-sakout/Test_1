@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Account implements AccountService {
 
-    private final List<Transaction> transactions = new ArrayList<>();
-    private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    private List<Transaction> transactions = new ArrayList<>();
+    private static  DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     @Override
     public void deposit(int amount) {
